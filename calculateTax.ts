@@ -1,6 +1,10 @@
 abstract class WorkerTax {
 
-    constructor(public codredd: number, public redditoAnnuoLordo: number, public tasseInps: number, public tasseIrpef: number) {
+     constructor(public codredd: number, public redditoAnnuoLordo: number, public tasseInps: number, public tasseIrpef: number) {
+        this.codredd = codredd
+        this.redditoAnnuoLordo = redditoAnnuoLordo
+        this.tasseInps = tasseInps
+        this.tasseIrpef = tasseIrpef
         console.log(`Reddito netto ${this.getRedditoAnnuoNetto}, a fronte di ${this.getTasseInps}€ di Inps e ${this.getTasseIrpef}€ di Irpef`)
     }
 
